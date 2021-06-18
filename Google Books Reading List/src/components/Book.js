@@ -1,16 +1,24 @@
 import React from 'react';
 import '../stylesheets/splash.css';
 
-class Book extends React.Component { //Did not utilize react hooks in this component to demonstrate knowledge of class components
+//Did not utilize react hooks in this component to demonstrate knowledge of class components
+
+class Book extends React.Component { 
   constructor(props) {
     super(props);
     this.state = { books:[] };
-    // this.addBook = this.addBook.bind(this);
+    this.addBook = this.addBook.bind(this);
   }
 
-  // addBook(e) {
-  //   e.preventdefault;
-  // }
+  addBook(e) {
+    e.preventdefault;
+    const newBook = {title: this.props.book.volumeInfo.title};
+    this.setState((prevState) => {
+      return {
+        books: prevState.books.concat(newBook)
+      }
+    })
+  }
 
   render() {
     return (
@@ -25,7 +33,7 @@ class Book extends React.Component { //Did not utilize react hooks in this compo
           </li>
         </ul>
         
-        <form >
+        <form onSubmit={this.addBook}>
           <button type="submit">add to reading list</button>
         </form>
       </div>
