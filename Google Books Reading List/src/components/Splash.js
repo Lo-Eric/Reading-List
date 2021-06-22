@@ -5,6 +5,8 @@ import axios from 'axios';
 import '../stylesheets/splash.css';
 import Book from './Book'
 
+//Due to time contraints and feeling very sick from covid vaccine, the reading list feature has not been implemented and styling has not really been worked on. Will implement these features in the upcoming days.  
+
 function Splash () {
   const [book, setBook] = useState("");
   const [booksList, setBooksList] = useState([]);
@@ -20,7 +22,7 @@ function Splash () {
     axios.get("https://www.googleapis.com/books/v1/volumes?q=" + book + "&key=" + apiKey + "&maxResults=5")
       .then(data => {
         setBooksList(data.data.items);
-        console.log(booksList)
+        // console.log(booksList)
       });
   }
 
