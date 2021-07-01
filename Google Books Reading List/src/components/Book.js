@@ -1,39 +1,31 @@
 import React from 'react';
 import '../stylesheets/splash.css';
 
-//Did not utilize react hooks in this component to demonstrate knowledge of class components
-
 class Book extends React.Component { 
   constructor(props) {
     super(props);
-    this.state = { books:[] };
-    this.addBook = this.addBook.bind(this);
-  }
-
-  addBook(e) {
-    e.preventdefault;
-    const newBook = {title: this.props.book.volumeInfo.title};
-    this.setState((prevState) => {
-      return {
-        books: prevState.books.concat(newBook)
-      }
-    })
+    this.state = { readingList:[] };
   }
 
   render() {
+    let book = {
+      title: this.props.book.volumeInfo.title,
+      authors: this.props.book.volumeInfo.authors,
+      publisher: this.props.book.volumeInfo.publisher,
+    }
+
     return (
       <div className='book-main'>
         <ul>
           <li id='book-content'>
-            {this.props.book.volumeInfo.title}
+            {book.title}
             <br/>
-            By {this.props.book.volumeInfo.authors}
+            By {book.authors}
             <br/>
-            Publisher: {this.props.book.volumeInfo.publisher}
+            Publisher: {book.publisher}
           </li>
         </ul>
-        
-        <form onSubmit={this.addBook}>
+        <form onSubmit={() => this.props.addBook(book)}>
           <button type="submit">add to reading list</button>
         </form>
       </div>
