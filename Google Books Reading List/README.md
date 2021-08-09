@@ -11,3 +11,7 @@ To run Reading List on your local computer, download/clone the project to the ap
 
 At the command prompt cd frontend to get to the frontend folder and npm install once more. When your dependences have been installed, run npm start. If your browswer window doesn't automatically open to localhost:3000/, click the link to open a new window.
 
+Technologies Used
+------
+  * <a href="https://reactjs.org/">React</a> <a href="https://react-redux.js.org/">Redux</a>
+  * <a href="https://nodejs.org/en/">Node.js</a>: server-side JavaScript runtime environment with `npm` package manager
