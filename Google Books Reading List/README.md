@@ -16,4 +16,7 @@ At the command prompt cd frontend to get to the frontend folder and npm install 
 Technologies Used
 ------
   * <a href="https://reactjs.org/">React</a> <a href="https://react-redux.js.org/">Redux</a>
-  * <a href="https://nodejs.org/en/">Node.js</a>: server-side JavaScript runtime environment with `npm` package manager
+  * <a href="https://nodejs.org/en/">Node.js</a>: server-side JavaScript runtime environment with `npm` 
+  package manager
+  * <a href="https://developers.google.com/books">Google Books API</a>: Browse the Google Books index
+
