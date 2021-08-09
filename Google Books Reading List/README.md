@@ -5,6 +5,8 @@ Reading List is a webapp that allows users to search the Google Books index for 
 How it works 
 ------
 Simply input keywords into the search bar and press enter or click the search button.
+To add books to your personal reading list, press "Add to list" next to the title of interest.
+To view your reading list, press "View your reading list".
 
 
 To run Reading List on your local computer, download/clone the project to the appropriate directory. In your terminal, navigate to the root directory, and npm install.
