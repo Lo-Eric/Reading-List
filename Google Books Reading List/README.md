@@ -7,7 +7,7 @@ Reading List is a webapp that allows users to search for books in the Google Boo
 How it works 
 ------
 Simply input keywords into the search bar and press enter or click the search button.\
-To add books to your personal reading list, press "Add to list" next to the title of interest.\
+To add books to your personal reading list, press "Add to list" next to the title(s) of interest.\
 To view your reading list, press "View your reading list".
 <br />
 <br />
